@@ -1,0 +1,22 @@
+---
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+
+import type { Features } from "~/types";
+
+const {
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render("bg"),
+} = Astro.props as Features;
+---
+
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-5xl ${classes?.container ?? ""}`}
+  bg={bg}
+  image={{ src: '~/assets/images/research.jpg', alt: 'AstroWind Hero Image' }}
+>
+
+</WidgetWrapper>

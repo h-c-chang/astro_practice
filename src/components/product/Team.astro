@@ -1,0 +1,39 @@
+---
+import Image from '~/components/common/Image.astro';
+
+export interface Props {
+    name?: string;
+    job1?: string;
+    job2?: string;
+    job3?: string;
+    image?: string | any; // TODO: find HTMLElementProps
+}
+
+const {
+    name,
+    job1,
+    job2,
+    job3,
+    image = await Astro.slots.render('image'),
+} = Astro.props;
+---
+
+
+            <div class="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col md:flex-row">
+                <div class="w-full md:w-2/5 h-80">
+                    <Image
+                    class="object-center object-cover w-full h-full"
+                    {...image}
+                    />
+                </div>
+                <div class="w-full md:w-3/5 text-left p-6 md:p-4 space-y-2">
+                    <p class="text-xl text-white font-bold">{name}</p>
+                    <p class="text-base text-gray-400 font-normal">{job1}</p>
+                    <p class="text-base text-gray-400 font-normal">{job2}</p>
+                    <p class="text-base text-gray-400 font-normal">{job3}</p>
+                </div>
+            </div>
+
+
+
+

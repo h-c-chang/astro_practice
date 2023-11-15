@@ -88,3 +88,11 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.bg-hero{
+  background-image: url(~/assets/images/Sweniverse.png);
+}
+
+.bg-hero-bk{
+  background-color: #FDE8DA;
+}

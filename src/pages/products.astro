@@ -1,0 +1,36 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import GridItem from '~/components/product/GridItem.astro';
+
+const metadata = {
+    title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+    ignoreTitleTemplate: true,
+};
+
+const productsData = [
+    { id: 1, image: '~/assets/images/beer_1.jpg', alt: 'AstroWind Hero Image', name: '啤酒喵', price: '$48' },
+    { id: 2, image: '~/assets/images/black_1.jpg', alt: 'Another Product Image', name: '漢堡', price: '$55' },
+    { id: 3, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image', name: 'Product 2', price: '$55' },
+    { id: 4, image: '~/assets/images/black_3.jpg', alt: 'Another Product Image', name: 'Product 2', price: '$55' },
+    // Add more product data as needed
+];
+---
+<Layout metadata={metadata}>
+    <div class="bg-white">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 class="sr-only">Products</h2>
+    
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                {productsData.map((product) => (
+                <GridItem
+                    image={{ src: product.image, alt: product.alt }}
+                    name={product.name}
+                    price={product.price}
+                >
+                </GridItem>
+                ))}
+            <!-- More products... -->
+            </div>
+        </div>
+    </div>
+</Layout>
