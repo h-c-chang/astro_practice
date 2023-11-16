@@ -4,9 +4,9 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Research from '~/components/widgets/Research.astro';
 import GridItem2 from '~/components/product/GridItem2.astro';
-import type { CallToAction } from '~/types';
-import Button from '~/components/ui/Button.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
+// import type { CallToAction } from '~/types';
+// import Button from '~/components/ui/Button.astro';
+// import Hero2 from '~/components/widgets/Hero2.astro';
 import Team from '~/components/product/Team.astro';
 
 const metadata = {
@@ -14,12 +14,12 @@ const metadata = {
   ignoreTitleTemplate: true,
 };
 const productsData = [
-    { id: 1, image: '~/assets/images/beer_1.jpg', alt: 'AstroWind Hero Image' },
-    { id: 2, image: '~/assets/images/black_1.jpg', alt: 'Another Product Image' },
-    { id: 3, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image' },
-    { id: 4, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image' },
+    { id: 1, image: '~/assets/images/black_1.jpg', alt: 'AstroWind Hero Image' },
+    { id: 2, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image' },
+    { id: 3, image: '~/assets/images/black_3.jpg', alt: 'Another Product Image' },
+    { id: 4, image: '~/assets/images/black_1.jpg', alt: 'Another Product Image' },
     { id: 5, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image' },
-    { id: 6, image: '~/assets/images/black_2.jpg', alt: 'Another Product Image' },
+    { id: 6, image: '~/assets/images/black_3.jpg', alt: 'Another Product Image' },
 
     // Add more product data as needed
 ];
@@ -57,7 +57,7 @@ const productsData = [
     subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
   />
 
-  <!-- <div style="background-color:#040404">
+  <div style="background-color:#040404">
     <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="sr-only">Products</h2>
         <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
@@ -66,11 +66,11 @@ const productsData = [
                 image={{ src: product.image, alt: product.alt }}
             >
             </GridItem2>
-            ))} -->
+            ))}
         <!-- More products... -->
-        <!-- </div>
+        </div>
     </div>
-  </div> -->
+  </div>
   <div style="background-color:#040404">
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
