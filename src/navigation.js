@@ -9,11 +9,12 @@ export const headerData = {
     },
     {
       text: 'About',
-      href: getPermalink('#menu-hero')
+      href: getPermalink('#about')
 
     },
     {
       text: 'Figures',
+      href: getPermalink('#figures'),
       links: [
         {
           text: 'Products',
@@ -35,17 +36,17 @@ export const headerData = {
     },
     {
       text: 'News',
-      href: getPermalink('#menu-hero')
+      href: getPermalink('#news')
 
     },
     {
       text: 'SNV Researchers',
-      href: getPermalink('#menu-hero')
+      href: getPermalink('#researchers')
 
     },
     {
       text: 'Shop',
-      href: getPermalink('#menu-hero')
+      href: 'https://www.pinkoi.com/store/sweniverse'
 
     },
   ],
