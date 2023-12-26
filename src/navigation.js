@@ -14,15 +14,15 @@ export const headerData = {
     },
     {
       text: 'Figures',
-      href: getPermalink('#figures'),
+      href: getBlogPermalink(),
       links: [
         {
-          text: 'Products',
-          href: getPermalink('/products'),
+          text: 'Figures',
+          href: getBlogPermalink(),
         },
         {
-          text: 'product',
-          href: getPermalink('/product'),
+          text: 'Meowdeleine',
+          href: getPermalink('meowdeleine', 'category'),
         },
         {
           text: 'Mobile App',
