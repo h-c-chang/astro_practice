@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm install --os=linux --cpu=x64 sharp",
+    "build": "astro build && npm install --os=linux --cpu=x64 sharp && npm install --force @img/sharp-linux-x64",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
